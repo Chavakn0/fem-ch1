@@ -18,7 +18,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.jpeg)
 
 ### Links
 
@@ -50,11 +50,10 @@ body {
     }
 ```
 
-This is the best example of the Cascade part in CSS, or in other way the specificity of code.
-I have a .container class, followed by a .subcontainer class, after that a .subcontainer p, and finally a .subcontainer p:first-of-type, which let me style evrything on its own according to what they need, and this more specific one to have some characteristics that I needed just there:
+Previously this was a .subcontainer p:first-of-type, which let me style this for a specific purpose, but it was later changed to a h1 because it's important to have navigational landmarks.
 
 ```css
-.subcontainer p:first-of-type {
+h1 {
       font-family: "Outfit", sans-serif;
       font-size: 22px;
       font-weight: 700;
